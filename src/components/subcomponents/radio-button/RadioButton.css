@@ -1,0 +1,63 @@
+.b-radio-button {
+  position: relative;
+  margin-bottom: var(--common-margin);
+}
+
+.b-radio-button:last-child {
+  margin-bottom: 20px;
+}
+
+.b-radio-button label {
+  margin-bottom: 0;
+}
+
+.b-app .b-radio-button .Mui-checked + .MuiSwitch-track {
+  background-color: var(--secondary-color);
+  opacity: 0.2;
+}
+
+.b-radio-button .Mui-checked .MuiSwitch-thumb {
+  background-color: var(--main-color);
+}
+
+.b-radio-button .MuiTypography-root {
+  font-family: 'Circe Regular', sans-serif;
+}
+
+.b-radio-button .b-radio-button__switch {
+  margin-left: 50px;
+}
+
+.b-radio-button .MuiFormControlLabel-root {
+  margin-left: 0;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.b-radio-button .MuiSwitch-colorPrimary.Mui-checked + .MuiSwitch-track {
+  background-color: var(--main-color);
+}
+
+.b-radio__hint {
+  position: absolute;
+  top: 50%;
+  right: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 15px;
+  font-weight: 900;
+  color: #fff;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  user-select: none;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+
+.MuiTooltip-popper {
+  max-width: 290px;
+  text-align: center;
+}

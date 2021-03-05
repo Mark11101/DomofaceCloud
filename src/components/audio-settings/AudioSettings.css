@@ -1,0 +1,4 @@
+.b-audio-setting .b-audio-setting__header,
+.b-audio-setting__radio {
+  margin-bottom: var(--big-margin);
+}

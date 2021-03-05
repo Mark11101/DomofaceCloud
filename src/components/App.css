@@ -1,0 +1,7 @@
+.b-app {
+  /* padding-bottom: 150px; */
+}
+
+.not-found-page .b-app__main-content {
+  height: 100vh;
+}

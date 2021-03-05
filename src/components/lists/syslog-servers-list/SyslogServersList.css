@@ -1,0 +1,11 @@
+.b-syslog-servers {
+  padding-bottom: var(--medium-padding);
+}
+
+.b-syslog-servers-list__edited-address {
+  margin-bottom: var(--average-margin);
+}
+
+.b-syslog-servers-list__added-address {
+  margin-bottom: var(--medium-margin);
+}

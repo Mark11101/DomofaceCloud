@@ -1,0 +1,140 @@
+.b-admin-screen .b-companies {
+  padding-bottom: var(--medium-padding);
+  max-width: 600px;
+}
+
+.b-companies__header {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: var(--big-margin);
+}
+
+.b-companies__buttons {
+  display: flex;
+}
+
+.b-companies .b-companies__delete-all-btn,
+.b-companies .b-companies__add-btn {
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: var(--average-margin);
+  padding: 10px;
+}
+
+.b-companies__search-input-group {
+  margin-bottom: var(--average-margin);
+}
+
+.b-companies .b-companies__search-input {
+  border: 1px var(--main-color) solid;
+}
+
+.b-companies__search-input + .input-group-append .input-group-text {
+  background-color: var(--main-color);
+  color: white;
+  border: 1px var(--main-color) solid;
+}
+
+.b-companies__search-input.form-control:focus {
+  box-shadow: none;
+}
+
+.b-companies__search-input.form-control:focus,
+.b-companies__search-input.form-control:focus + .input-group-append .input-group-text {
+  border-color: var(--secondary-color);
+}
+
+.b-companies__company {
+  position: relative;
+  margin-bottom: -1px;
+  border-bottom: 1px var(--main-color) solid;
+  border-top: 1px var(--main-color) solid;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.b-companies__company:hover {
+  border-bottom: 1px var(--secondary-color) solid;
+  border-top: 1px var(--secondary-color) solid;
+  z-index: 2;
+}
+
+.b-companies__company svg {
+  color: var(--delete-color);
+  font-size: 25px;
+}
+
+.b-companies__delete-btn svg:hover {
+  color: var(--delete-secondary-color);
+}
+
+.b-companies .b-companies__delete-btn,
+.b-companies .b-companies__delete-btn:hover {
+  background-color: transparent;
+  padding: 0;
+}
+
+.b-companies__list {
+  padding-bottom: 80px;
+}
+
+.b-companies .b-companies__edit-btn,
+.b-companies .b-companies__edit-btn:hover {
+  background-color: transparent;
+  padding: 0;
+}
+
+.b-companies__edit-btn svg {
+  color: var(--edit-color);
+  font-size: 25px;
+}
+
+.b-companies__edit-btn svg:hover {
+  color: var(--edit-secondary-color);
+}
+
+.b-companies__edit-btn {
+  margin-right: var(--common-margin);
+}
+
+.b-companies__company-buttons {
+  flex-grow: 0.01;
+  text-align: right;
+}
+
+.b-companies__company .b-companies__company-open-modal-btn {
+  background-color: transparent;
+  border: none;
+  flex-grow: 1;
+  text-align: left;
+  padding: var(--average-margin) 0;
+  color: black;
+}
+
+.b-companies-list__choose-entity-modal button {
+  width: 100%;
+  margin-bottom: var(--tiny-margin);
+}
+
+.b-companies-list__choose-entity-modal button:last-child {
+  margin-bottom: 0;
+}
+
+@media (min-width: 370px) {
+  .b-companies__qr-codes-search-input {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1025px) {
+  .b-companies__company-buttons {
+    visibility: hidden;
+  }
+  
+  .b-companies__company:hover .b-companies__company-buttons {
+    visibility: visible;
+  }
+}

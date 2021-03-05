@@ -1,0 +1,113 @@
+.b-qr-codes-list .b-qr-codes-list__add-btn {
+  width: 100%;
+  margin-bottom: var(--average-margin);
+}
+
+.b-qr-codes-list__cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.b-qr-codes-list__card {
+  width: 220px;
+  margin-bottom: var(--average-margin);
+}
+
+.b-qr-codes-list__card .card-header {
+  padding: 0;
+  height: 9%;
+}
+
+.b-qr-codes-list__card .card-footer {
+  padding: 0;
+}
+
+.b-qr-codes-list__card:last-child {
+  margin-bottom: 0;
+}
+
+.b-qr-codes-list__qr-code-buttons {
+  width: 110px;
+}
+
+.b-qr-codes-list__qr-code-buttons button {
+  display: block;
+  width: 100%;
+  height: 50%;
+}
+
+.b-qr-codes-list__card .card-text p {
+  margin-bottom: 0;
+}
+
+.b-qr-codes-list__card p {
+  margin-bottom: 0;
+}
+
+.b-qr-codes-list__cards .card-columns .card {
+  max-width: unset;
+}
+
+.b-qr-codes-list__cards .card-columns {
+  column-count: 1;
+}
+
+.b-qr-codes-list__random-qr-btn {
+  width: 100%;
+  margin-bottom: var(--average-margin);
+}
+
+.b-qr-codes-list__delete-btn,
+.b-qr-codes-list__download-btn {
+  width: 100%;
+}
+
+.b-qr-codes-list__no-values {
+  margin-bottom: var(--average-margin);
+}
+
+.b-qr-codes-list__no-values p {
+  margin-bottom: 0;
+}
+
+@media (max-width: 575px) {
+  .b-qr-codes-list__card canvas {
+    width: 100%!important;
+    height: unset!important;
+  }
+
+  .b-qr-codes-list__cards,
+  .b-qr-codes-list__card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .b-qr-codes-list__qr-code-buttons {
+    width: 100%;
+    margin-top: -8px;
+  }
+
+  .b-qr-codes-list__card canvas {
+    margin-bottom: -8px;
+  }
+
+  .b-qr-codes-list__cards .card-columns .card {
+    display: block;
+  }
+
+  .b-qr-codes-list .b-qr-codes-list__add-btn {
+    max-width: 472px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .b-qr-codes-list__cards .card-columns {
+    column-count: 2;
+  }
+
+  .b-qr-codes-list__card .card-header {
+    display: flex;
+  }
+}

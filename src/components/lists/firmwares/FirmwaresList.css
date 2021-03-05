@@ -1,0 +1,28 @@
+.b-firmwares-list {
+  padding-bottom: 1px;
+}
+
+.b-firmwares-list__more-info p {
+  margin-bottom: 0;
+}
+
+.b-firmwares-list__more-info {
+  margin-bottom: var(--average-margin);
+}
+
+.b-firmwares-list__download-btns button {
+  width: 100%;
+  margin-bottom: var(--tiny-margin);
+}
+
+.b-firmwares-list__file-inputs .b-firmwares-list__file-input {
+  margin-bottom: var(--tiny-margin);
+}
+
+.b-firmwares-list__file-inputs .b-firmwares-list__file-input:last-child {
+  margin-bottom: var(--average-margin);
+}
+
+.b-firmwares-list__file-inputs {
+  margin-top: -10px;
+}

@@ -1,0 +1,26 @@
+.b-resident-screen__archive-disabled {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  /* height: 60vh; */
+}
+
+.b-resident-screen__archive-disabled svg {
+  font-size: 150px;
+  color: var(--secondary-color);
+}
+
+.b-resident-screen__view.container {
+  padding-top: var(--huge-padding);
+  padding-bottom: 100px;
+  max-width: 600px;
+  min-height: 70vh;
+}
+
+@media (min-width: 1200px) {
+  .b-resident-screen {
+    padding-top: 54px;
+  }
+}

@@ -1,0 +1,27 @@
+.b-service-screen .react-swipeable-view-container {
+  height: 100vh;
+}
+
+.b-service-screen__lists button {
+  width: 100%;
+  margin-bottom: var(--tiny-margin);
+}
+
+.b-service-screen .b-service-screen__lists {
+  padding-top: var(--huge-padding);
+  max-width: 600px;
+}
+
+.b-service-screen__header {
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .b-service-screen .b-service-screen__intercom-select {
+    padding-top: 85px;
+  }
+
+  .b-service-screen .b-service-screen__lists {
+    padding-top: 85px;
+  }
+}

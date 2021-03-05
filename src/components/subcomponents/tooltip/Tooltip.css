@@ -1,0 +1,19 @@
+.b-tooltip {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  font-size: 11px;
+  font-weight: 700;
+  color: #fff;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
+.b-tooltip span {
+  padding: 1px 6px;
+}

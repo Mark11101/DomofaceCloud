@@ -1,0 +1,9 @@
+.b-rfid-keys-list__select-field.b-select {
+  margin-top: -10px;
+}
+
+.b-rfid-keys-list__select-field.b-select,
+.b-rfid-keys-list__input-field.b-input-field,
+.b-rfid-keys-list__no-values {
+  margin-bottom: var(--average-margin);
+}

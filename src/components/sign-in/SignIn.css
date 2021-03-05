@@ -1,0 +1,66 @@
+body.auth-page {
+  background: var(--main-color);
+  background: linear-gradient(0deg, var(--main-color) 0%, var(--white-color) 90%);
+  height: 100vh;
+}
+
+.b-sign-in__panel.container {
+  position: relative;
+  max-width: 500px;
+}
+
+.b-sign-in__input > div {
+  width: 100%;
+  margin-bottom: var(--large-margin);
+}
+
+.b-sign-in__input .MuiInput-underline:before {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.b-sign-in__input .MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.b-sign-in__input .MuiIconButton-root {
+  color: var(--main-color);
+}
+
+.b-sign-in__input .MuiIconButton-root:hover {
+  color: var(--secondary-color);
+}
+
+.b-sign-in__input .MuiInput-underline:after {
+  border-bottom: 2px solid var(--secondary-color);
+} 
+
+.b-sign-in .MuiInputLabel-root {
+  font-family: 'Circe Light', sans-serif;
+  font-size: 20px;
+}
+
+.b-sign-in__logo {
+  text-align: center;
+  padding-top: var(--giant-padding);
+  padding-bottom: 60px;
+}
+
+.b-sign-in__logo-image {
+  max-width: 200px;
+}
+
+.b-sign-in__submit {
+  width: 100%;
+}
+
+@media (max-width: 535px) {
+  .b-sign-in__panel.container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .b-sign-in__logo {
+    padding-bottom: 150px;
+  }
+}

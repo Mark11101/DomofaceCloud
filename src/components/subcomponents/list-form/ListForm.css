@@ -1,0 +1,179 @@
+.b-list-form__header {
+	font-size: 26px;
+	text-align: center;
+	margin-bottom: var(--big-margin);
+}
+
+.b-list-form__buttons {
+	display: flex;
+}
+
+.b-list-form .b-list-form__delete-all-btn,
+.b-list-form .b-list-form__add-btn {
+	width: 100%;
+	border-radius: 0;
+	margin-bottom: var(--average-margin);
+	padding: 10px;
+}
+
+.b-list-form__search-input-group {
+	margin-bottom: var(--average-margin);
+}
+
+.b-list-form .b-list-form__search-input {
+	border: 1px var(--main-color) solid;
+}
+
+.b-list-form__search-input + .input-group-append .input-group-text {
+	background-color: var(--main-color);
+	color: white;
+	border: 1px var(--main-color) solid;
+}
+
+.b-list-form__search-input.form-control:focus {
+	box-shadow: none;
+}
+
+.b-list-form__search-input.form-control:focus,
+.b-list-form__search-input.form-control:focus + .input-group-append .input-group-text {
+	border-color: var(--secondary-color);
+}
+
+.b-list-form__item {
+	position: relative;
+	margin-bottom: -1px;
+	border-bottom: 1px var(--main-color) solid;
+	border-top: 1px var(--main-color) solid;
+	z-index: 1;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.b-list-form__item:hover {
+	border-bottom: 1px var(--secondary-color) solid;
+	border-top: 1px var(--secondary-color) solid;
+	z-index: 2;
+}
+
+.b-list-form__item svg {
+	color: var(--delete-color);
+	font-size: 25px;
+}
+
+.b-list-form__item-buttons {
+	flex-grow: 0.01;
+	text-align: right;
+}
+
+.b-list-form .b-list-form__edit-btn,
+.b-list-form .b-list-form__edit-btn:hover,
+.b-list-form .b-list-form__more-btn,
+.b-list-form .b-list-form__more-btn:hover {
+	background-color: transparent;
+	padding: 0;
+}
+
+.b-list-form__edit-btn svg {
+	color: var(--edit-color);
+	font-size: 25px;
+}
+
+.b-list-form__edit-btn svg:hover {
+	color: var(--edit-secondary-color);
+}
+
+.b-list-form__edit-btn {
+	margin-right: var(--common-margin);
+}
+
+.b-list-form__more-btn {
+	margin-right: var(--average-margin);
+}
+
+.b-list-form__more-btn svg {
+	color: var(--main-color);
+	font-size: 25px;
+}
+
+.b-list-form__more-btn svg:hover {
+	color: var(--secondary-color);
+}
+
+.b-list-form__delete-btn svg:hover {
+	color: var(--delete-secondary-color);
+}
+
+.b-list-form .b-list-form__delete-btn,
+.b-list-form .b-list-form__delete-btn:hover {
+	background-color: transparent;
+	padding: 0;
+}
+
+.b-list-form__item .b-list-form__item-open-modal-btn {
+	background-color: transparent;
+	border: none;
+	flex-grow: 1;
+	text-align: left;
+	padding: var(--average-margin) 0;
+	color: black;
+}
+
+.b-list-form__item-link {
+	color: black;
+	padding: var(--average-margin) 0;
+	flex-grow: 1;
+}
+
+.b-list-form__item-link:hover {
+	color: black;
+}
+
+.b-list-form__item-span {
+	padding: var(--average-margin) 0;
+}
+
+.b-list-form__item {
+  font-family: 'Circe Regular', sans-serif;
+}
+
+.b-list-form__more-data p {
+	margin-bottom: 0;
+}
+
+.b-list-form__list-item-text {
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	margin-right: var(--medium-margin);
+}
+
+.b-list-form__list-item-text {
+	width: 51%;
+	flex-grow: 1;
+}
+
+.b-list-form__more-data p {
+	width: 100%;
+}
+
+.b-list-form__close-modal-radio {
+	max-width: unset;
+}
+
+@media (min-width: 370px) {
+	.b-list-form__qr-codes-search-input {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (min-width: 1025px) {
+	.b-list-form__item-buttons {
+		visibility: hidden;
+	}
+	
+	.b-list-form__item:hover .b-list-form__item-buttons {
+		visibility: visible;
+	}
+}

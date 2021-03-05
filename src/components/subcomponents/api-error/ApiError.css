@@ -1,0 +1,12 @@
+.b-api-error__title {
+  text-align: center;
+  font-size: 10rem;
+}
+
+.b-api-error__content {
+  text-align: center;
+}
+
+.b-api-error__footer {
+  text-align: center;
+}

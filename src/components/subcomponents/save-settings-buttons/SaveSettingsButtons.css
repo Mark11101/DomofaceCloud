@@ -1,0 +1,19 @@
+.b-save-settings-buttons {
+    display: flex;
+    margin-bottom: 0;
+  }
+  
+  .b-save-settings-buttons .b-save-settings-buttons__reset-settings-btn {
+    background-color: var(--delete-color);
+    margin-bottom: var(--large-margin);
+    flex-grow: 1;
+  }
+  
+  .b-save-settings-buttons .b-save-settings-buttons__reset-settings-btn:hover {
+    background-color: var(--delete-secondary-color);
+  }
+  
+  .b-save-settings-buttons .b-save-settings-buttons__save-settings-btn {
+    margin-bottom: var(--large-margin);
+    flex-grow: 1;
+  }

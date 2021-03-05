@@ -1,0 +1,126 @@
+.b-intercom-screen .b-archive,
+.b-resident-screen .b-archive {
+  padding-bottom: 70px;
+  max-width: 720px;
+}
+
+.b-archive {
+  position: relative;
+}
+
+.b-intercom-screen .b-archive {
+  padding-top: var(--huge-padding);
+}
+
+.b-resident-screen .b-archive {
+  padding-top: var(--huge-padding);
+}
+
+.b-archive__header {
+  margin-bottom: var(--big-margin);
+}
+
+.b-archive .Collapsible__contentInner {
+  padding-top: var(--tiny-padding);
+  padding-bottom: var(--common-margin);
+}
+
+.b-archive__header {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: var(--big-margin);
+}
+
+.b-archive__dates {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: var(--average-margin);
+  padding-top: var(--common-margin)
+}
+
+.b-archive__horizon-divider {
+  margin: 0 var(--large-margin);
+  margin-bottom: var(--common-margin);
+}
+
+.b-archive__dates small {
+  display: none;
+}
+
+.b-archive__dates .MuiInput-underline:before,
+.b-archive__dates .MuiInput-underline:after {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.b-archive .b-archive__dates .MuiInput-underline:hover:before {
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.b-archive__dates .MuiIconButton-label {
+  color: var(--main-color);
+}
+
+.b-archive__dates .MuiInputBase-root:hover .MuiIconButton-label {
+  color: var(--secondary-color)
+}
+
+.b-archive__dates .MuiFormControl-root {
+  max-width: 130px;
+}
+
+.b-archive__load-btn {
+  width: 100%;
+}
+
+.b-archive__no-ftp-server {
+  margin-bottom: var(--common-margin);
+}
+
+.b-archive__tooltip {
+  position: absolute;
+  display: block;
+  top: 39px;
+  right: 15px;
+}
+
+.b-archive__unavailable {
+  text-align: center;
+}
+
+.b-archive .b-archive__unavailable p {
+  margin-bottom: var(--common-margin);
+}
+
+.b-archive__unavailable svg {
+  font-size: 150px;
+  color: var(--secondary-color);
+}
+
+@media (max-width: 390px) {
+  .b-archive__dates .MuiFormControl-root {
+    max-width: 115px;
+  }
+
+  .b-archive__dates input {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .b-intercom-screen .b-archive {
+    padding-top: var(--huge-padding);
+  }
+}
+
+@media (min-width: 1200px) {
+  .b-intercom-screen .b-archive,
+  .b-resident-screen .b-archive {
+    padding-top: 85px
+  }
+
+  .b-archive__tooltip {
+    top: 95px;
+    right: -15px;
+  }
+}

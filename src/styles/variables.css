@@ -1,0 +1,50 @@
+:root {
+  /* indents */
+  --giant-margin: 48px;
+  --huge-margin: 32px;
+  --large-margin: 24px;
+  --big-margin: 20px;
+  --average-margin: 16px;
+  --medium-margin: 12px;
+  --common-margin: 10px;
+  --small-margin: 8px;
+  --tiny-margin: 5px;
+
+  --giant-padding: 48px;
+  --huge-padding: 32px;
+  --large-padding: 24px;
+  --big-padding: 20px;
+  --average-padding: 16px;
+  --medium-padding: 12px;
+  --common-padding: 10px;
+  --small-padding: 8px;
+  --tiny-padding: 5px;
+
+  /* colors */
+  --white-color:     #ffffff;
+  --black-color:     #20232a;
+  --grey-color:      #757575;
+  --main-color:      #58bcb6;
+  --secondary-color: #328f8b;
+  --edit-color:      #d8bc5f;
+  --delete-color:    #bc5858;
+  --edit-secondary-color:   #b89e53;
+  --delete-secondary-color: #8f3d3d;
+  
+  /* shadows */
+  --panel-shadow: 0 1px 0 0 #d7d8db, 0 0 0 1px #e3e4e8;
+
+  /* borders */
+  --border-radius: 4px;
+  
+  /* sizes */
+  --huge-size:    1.875rem; /* 30px */
+  --big-size:     1.5rem;   /* 24px */
+  --normal-size:  1rem;     /* 16px */
+  --small-size:   0.875rem; /* 14px */
+  --little-size:  0.75rem;  /* 12px */
+  --tiny-size:    0.625rem; /* 10px */
+  --micro-size:   0.5rem;   /* 8px */
+
+  
+}

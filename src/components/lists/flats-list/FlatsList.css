@@ -1,0 +1,46 @@
+.b-flats-list__number-input {
+  margin-bottom: var(--large-margin);
+}
+
+.b-flats-list__audio-settings-inputs {
+  margin-bottom: var(--average-margin);
+}
+
+.b-flats-list-info .Collapsible__contentInner p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  margin-bottom: var(--small-margin);
+}
+
+.b-flats-list-info .Collapsible__contentInner p span {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.b-flats-list-info .Collapsible__contentInner p span:first-child {
+  margin-right: var(--huge-margin);
+}
+
+.b-flats-list-info .Collapsible__contentInner p span:last-child {
+  flex: 0.4;
+}
+
+.b-flats-list-voltage-settings {
+  margin-bottom: var(--large-margin);
+}
+
+.b-flats-list-voltage-settings__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--common-margin);
+}
+
+.b-flats-list-voltage-settings__header h3 {
+  margin-right: var(--common-margin);
+  margin-bottom: 0;
+}

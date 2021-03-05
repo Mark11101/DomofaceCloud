@@ -1,0 +1,5 @@
+.b-notification {
+  display: flex;
+  align-items: center;
+  padding-left: var(--common-padding);
+}

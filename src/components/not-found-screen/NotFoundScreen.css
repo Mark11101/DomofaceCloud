@@ -1,0 +1,58 @@
+body.not-found-page {
+  background-color: var(--main-color);
+}
+
+.not-found-page .b-app__main-content {
+  display: flex;
+  align-items: center;
+}
+
+.b-not-found__title {
+  text-align: center;
+  color: white;
+}
+
+.b-not-found__content {
+  text-align: center;
+  margin-bottom: var(--common-margin);
+}
+
+.b-not-found__image {
+  max-width: 350px;
+  height: auto;
+  width: 100%;
+}
+
+.b-not-found__title {
+  margin-top: var(--giant-margin);
+}
+
+.b-not-found .b-not-found__link {
+  color: var(--link-color);
+  padding: 0;
+  vertical-align: initial;
+}
+
+.b-not-found__help-message,
+.b-not-found .b-not-found__link {
+  font-size: 18px;
+}
+
+.b-not-found .b-not-found__back-btn {
+  background-color: white;
+  color: var(--secondary-color);
+}
+
+.b-not-found {
+  margin-top: -100px;
+}
+
+@media (max-width: 768px) {
+  .b-not-found__image {
+    max-width: 200px;
+  }
+
+  .b-not-found {
+    margin-top: -50px;
+  }
+}

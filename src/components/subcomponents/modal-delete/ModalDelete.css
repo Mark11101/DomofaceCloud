@@ -1,0 +1,14 @@
+.b-modal-delete__title {
+  margin-bottom: var(--average-margin);
+  text-align: center;
+}
+
+.b-modal-delete__control-btns {
+  display: flex;
+}
+
+.b-modal-delete__control-btns button {
+  flex-grow: 1;
+}
+
+

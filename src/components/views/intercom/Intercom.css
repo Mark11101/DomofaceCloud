@@ -1,0 +1,67 @@
+.b-intercom-screen .b-intercom {
+  padding-bottom: 170px;
+  padding-top: var(--huge-padding);
+  max-width: 600px;
+}
+
+.b-intercom h1 {
+  font-size: 28px;
+  text-align: center;
+}
+
+.b-intercom p {
+  margin-bottom: var(--medium-margin);
+}
+
+.b-intercom__title {
+  margin-bottom: var(--big-margin);
+}
+
+.b-intercom__photo-from-camera {
+  width: 100%;
+  margin-bottom: var(--average-margin);
+}
+
+.b-intercom__home-link {
+  width: 100%;
+  margin-bottom: var(--average-margin);
+}
+
+.b-intercom__open-door-btn,
+.b-intercom__update-firmware-btn,
+.b-intercom__reload-btn {
+  width: 100%;
+  margin-bottom: var(--tiny-margin);
+}
+
+.b-intercom .b-intercom__reset-settings-btn {
+  background-color: var(--delete-color);
+  margin-bottom: var(--large-margin);
+  flex-grow: 1;
+  width: 100%;
+}
+
+.b-intercom .b-intercom__reset-settings-btn:hover {
+  background-color: var(--delete-secondary-color);
+}
+
+.b-intercom__save-btn {
+  width: 100%;
+}
+
+@media (min-width: 437px) {
+  .b-intercom__intercom-info p {
+    align-items: center;
+  }
+
+  .b-intercom__intercom-info p span:last-child {
+    width: 35%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .b-intercom-screen .b-intercom {
+    padding-top: 85px;
+    padding-bottom: 100px;
+  }
+}

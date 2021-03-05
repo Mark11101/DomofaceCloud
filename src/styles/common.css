@@ -1,0 +1,386 @@
+@font-face {
+  font-family: 'Circe Thin';
+  src: url('../fonts/Circe-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'Circe Light';
+  src: url('../fonts/Circe-Light.ttf');
+}
+
+@font-face {
+  font-family: 'Circe Regular';
+  src: url('../fonts/Circe-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Circe Bold';
+  src: url('../fonts/Circe-Bold.ttf');
+}
+
+html, body, #root {
+  /* min-height: 100%; */
+  margin: 0;
+  overscroll-behavior-x: none;
+  font-family: 'Circe Regular', sans-serif;
+}
+
+html {
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.b-app h1 {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: var(--big-margin);
+}
+
+.b-app h2 {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: var(--big-margin);
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Circe Bold', sans-serif;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+.b-app p {
+  margin-bottom: 0;
+}
+
+.b-app a:hover {
+  text-decoration: none!important;
+  color: var(--white-color);
+}
+
+.b-button {
+  display: inline-block;
+  font-weight: 400;
+  color: var(--font-dark-color);
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: var(--main-color);
+  padding: var(--common-padding) var(--big-padding);
+  font-size: 1rem;
+  border: none;
+  color: var(--white-color);
+  font-family: 'Circe Regular', sans-serif;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, opacity .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.b-button:hover {
+  cursor: pointer;
+  background-color: var(--secondary-color);
+}
+
+.b-button--delete {
+  background-color: var(--delete-color);
+}
+
+.b-button--delete:hover {
+  background-color: var(--delete-secondary-color);
+}
+
+.b-button--edit {
+  background-color: var(--edit-color);
+}
+
+.b-button--edit:hover {
+  background-color: var(--edit-secondary-color);
+}
+
+.b-button:disabled {
+  background-color: var(--grey-color);
+}
+
+.b-panel {
+  padding: var(--huge-padding);
+  background-color: var(--white-color);
+  border-radius: var(--border-radius);
+  border: 1px var(--main-color) solid;
+}
+
+.b-input-panel.MuiFormControlLabel-root {
+  border: 1px;
+  border-color: #347d77;
+  border-style: solid;
+  padding: .375rem .75rem;
+  margin-left: 0;
+  height: 60px;
+  width: 209px;
+  padding-left: 3px;
+  font-family: 'Circe Light', sans-serif;
+}
+
+.b-input-panel.MuiFormControlLabel-root:last-child {
+  margin-right: 0;
+}
+
+.b-input-panel.MuiFormControlLabel-root .MuiRadio-root {
+  color: var(--secondary-color);
+}
+
+.b-input-panel .MuiOutlinedInput-notchedOutline {
+  border-color: var(--main-color);
+}
+
+.b-input-panel .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: var(--secondary-color);
+}
+
+.b-input-panel .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: var(--secondary-color);
+}
+
+.b-input-panel .MuiOutlinedInput-root.Mui-error:hover .MuiOutlinedInput-notchedOutline {
+  border-color: var(--delete-secondary-color);
+}
+
+.b-input-panel .MuiOutlinedInput-root.Mui-focused.Mui-error .MuiOutlinedInput-notchedOutline {
+  border-color: var(--delete-secondary-color);
+}
+
+.b-input-panel .MuiSelect-root,
+.MuiMenuItem-root.MuiListItem-root {
+  font-family: 'Circe Regular', sans-serif;
+}
+
+/* Remove counter in number input */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.b-list {
+  padding-top: var(--common-margin);
+  padding-bottom: var(--large-margin);
+}
+
+.b-list__item {
+  position: relative;
+  margin-bottom: -1px;
+  border-bottom: 1px var(--main-color) solid;
+  border-top: 1px var(--main-color) solid;
+  z-index: 1;
+  padding: var(--average-margin) 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.b-list__item:hover {
+  border-bottom: 1px var(--secondary-color) solid;
+  border-top: 1px var(--secondary-color) solid;
+  z-index: 2;
+}
+
+.b-list__item svg {
+  color: var(--delete-color);
+  font-size: 25px;
+}
+
+.b-list__item-delete-btn svg:hover {
+  color: var(--delete-secondary-color);
+}
+
+.b-list .b-list__item-delete-btn,
+.b-list .b-list__item-delete-btn:hover {
+  background-color: transparent;
+  padding: 0;
+}
+
+.b-list .b-list__delete-all-btn,
+.b-list .b-list__add-btn {
+  width: 100%;
+  border-radius: 0;
+  margin-bottom: var(--common-margin);
+  padding: 10px;
+}
+
+.b-list__buttons {
+  display: flex;
+}
+
+.b-list__submit-add-btn {
+  width: 100%;
+  margin-bottom: var(--large-margin);
+}
+
+.b-list__item p {
+  margin-bottom: 0;
+}
+
+.b-fraction {
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.b-fraction div:first-child {
+  margin-right: 5px;
+}
+
+.b-fraction div:last-child {
+  margin-top: 1px;
+}
+
+.b-fraction p:first-child {
+  margin-bottom: -16px;
+}
+
+.b-fraction p:last-child {
+  margin-top: -5px;
+}
+
+.b-collapsible__inner-list.Collapsible .Collapsible__contentInner,
+.b-modal-form .b-collapsible__inner-list.Collapsible .Collapsible__contentInner {
+  margin-left: 20px;
+}
+
+.b-modal-form .Collapsible__contentInner {
+  padding: var(--common-padding) 0;
+}
+
+.Collapsible .Collapsible__contentInner,
+.b-modal-form .Collapsible .Collapsible__contentInner {
+  margin-left: var(--common-margin);
+}
+
+.b-app .MuiSlider-root {
+  width: 92%;
+  color: var(--secondary-color);
+}
+
+.MuiToolbar-root.MuiPickersToolbar-toolbar,
+.MuiPaper-root .MuiPickerDTTabs-tabs,
+.MuiPickersDay-day.MuiPickersDay-daySelected,
+.MuiPickersDay-day.MuiPickersDay-daySelected:hover,
+.MuiPickersClock-clock .MuiPickersClockPointer-pointer,
+.MuiPickersClock-clock .MuiPickersClock-pin,
+.MuiPickersClock-clock .MuiPickersClockPointer-thumb {
+  background-color: var(--secondary-color);
+}
+
+.MuiPickersDay-day.MuiPickersDay-current,
+.MuiDialogActions-root button,
+.MuiPickersDay-current p {
+  color: var(--secondary-color);
+}
+
+.MuiPickersDay-daySelected.MuiPickersDay-current,
+.MuiPickersClock-clock span,
+.MuiPickersDay-daySelected p {
+  color: white;
+}
+
+.MuiPickersClock-clock .MuiPickersClockPointer-thumb {
+  border-color: var(--secondary-color);
+}
+
+.MuiPickersClock-container .MuiPickersClock-clock {
+  background-color: var(--main-color);
+}
+
+
+
+.b-modal__submit-btn {
+  width: 100%;
+}
+
+.b-modal-form small {
+  font-family: 'Circe Regular', sans-serif;
+}
+
+.modal-backdrop.show.fade {
+  opacity: 0.2;
+}
+
+.b-app .Collapsible__trigger,
+.b-modal-form .Collapsible__trigger {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--average-padding);
+  position: relative;
+  margin-bottom: var(--tiny-margin);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  background-color: var(--main-color);
+  color: var(--white-color);
+}
+
+.b-app .Collapsible__trigger.is-open,
+.b-app .Collapsible__trigger:hover,
+.b-modal-form .Collapsible__trigger.is-open,
+.b-modal-form .Collapsible__trigger:hover {
+  z-index: 2;
+  background-color: var(--secondary-color);
+}
+
+.b-app .Collapsible__trigger:hover,
+.b-modal-form .Collapsible__trigger:hover {
+  cursor: pointer;
+}
+
+.b-app .Collapsible__trigger:after,
+.b-modal-form .Collapsible__trigger:after {
+  content: '>';
+  color: var(--white-color);
+  margin-left: var(--common-margin);
+  margin-right: 5px;
+  transform: rotate(90deg);
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.b-app .Collapsible__trigger.is-open:after,
+.b-modal-form .Collapsible__trigger.is-open:after {
+  margin-right: 2px;
+  transform: rotate(270deg);
+}
+
+.react-swipeable-view-container > div {
+  height: 93.5vh;
+}
+
+@media (min-width: 500px) {
+  .b-app .MuiSlider-root {
+    width: 95%;
+  }
+}
+
+@media (max-width: 1199px) {
+  .b-input-panel.MuiFormControlLabel-root {
+    width: 173px;
+  }
+
+  .b-input-panel.MuiFormControlLabel-label {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 991px) {
+  .b-input-panel.MuiFormControlLabel-root {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 991px) {
+  a:hover {
+    opacity: 1!important;
+  }
+}

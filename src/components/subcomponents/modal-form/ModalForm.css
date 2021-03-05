@@ -1,0 +1,79 @@
+.b-modal-form {
+  font-family: 'Circe Regular', sans-serif;
+}
+
+.b-modal-form p {
+  margin-bottom: 0;
+}
+
+.b-modal-form .b-modal-form__header {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.b-modal-form__header-title {
+  padding: 0 var(--average-padding);
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.b-modal-form .b-modal-form__close-modal-btn {
+  border-radius: 0;
+  padding: 10px 25px;
+  font-size: 23px;
+  border-top-right-radius: .2rem;
+  margin-bottom: -1px;
+}
+
+.b-modal-form + .modal-backdrop {
+  z-index: 1050;
+}
+
+.b-modal-form .b-modal-form__footer-close-modal-btn {
+  width: 100%;
+  font-size: 22px;
+}
+
+.b-modal-form__choose-entity-modal button {
+  width: 100%;
+  margin-bottom: var(--tiny-margin);
+}
+
+.b-modal-form__choose-entity-modal button:last-child {
+  margin-bottom: 0;
+}
+
+.b-modal-form .custom-file-label {
+  text-overflow: ellipsis;
+  overflow: hidden; 
+  padding-right: 80px;
+  white-space: nowrap;
+}
+
+.b-modal-form .modal-dialog {
+  padding-bottom: 60px;
+}
+
+.b-modal-form h2 {
+  font-size: 22px;
+  margin-bottom: var(--common-margin);
+}
+
+.b-modal-form h3 {
+  font-size: 20px;
+  margin-bottom: var(--common-margin);
+}
+
+.b-modal-form h4 {
+  font-size: 18px;
+  margin-bottom: var(--common-margin);
+}
+
+.b-modal-form .MuiSlider-root {
+  color: var(--secondary-color);
+}
+
+.b-modal-form + .MuiPopover-root .MuiMenuItem-root {
+  min-height: 48px;
+}

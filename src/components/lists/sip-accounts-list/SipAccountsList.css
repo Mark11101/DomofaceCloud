@@ -1,0 +1,7 @@
+.b-sip-accounts-list__no-values {
+  margin-bottom: var(--average-margin);
+}
+
+.b-sip-accounts-list__no-values p {
+  margin-bottom: 0;
+}

@@ -1,0 +1,46 @@
+.b-intercom-settings-info,
+.b-intercom-settings-main-settings,
+.b-intercom-settings-time-settings,
+.b-intercom-settings-voltage-settings,
+.b-intercom-settings-duration-settings,
+.b-intercom-settings-syslog-settings {
+  margin-bottom: var(--large-margin);
+}
+
+.b-intercom-settings .b-audio-setting {
+  margin-bottom: var(--average-margin);
+}
+
+.b-intercom-settings-voltage-settings__header {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--common-margin);
+}
+
+.b-intercom-settings-voltage-settings__header h3 {
+  margin-right: var(--common-margin);
+  margin-bottom: 0;
+}
+
+.b-intercom-settings-date-picker .MuiFormControl-root {
+  margin-bottom: var(--common-margin);
+}
+
+.b-intercom-settings .b-intercom-settings-date-picker .MuiInput-underline:before,
+.b-intercom-settings .b-intercom-settings-date-picker .MuiInput-underline:after {
+  width: 150px;
+  border-bottom: 1px solid var(--main-color);
+}
+
+.b-intercom-settings .b-intercom-settings-date-picker .MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom: 2px solid var(--secondary-color);
+}
+
+.b-intercom-settings__no-values {
+  margin-bottom: var(--average-margin);
+}
+
+.b-intercom-settings__flats-sip-credential,
+.b-intercom-settings__emergency-sip-credential {
+  margin-left: var(--tiny-margin);
+}

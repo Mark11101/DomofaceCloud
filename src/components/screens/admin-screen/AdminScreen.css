@@ -1,0 +1,15 @@
+.b-admin-screen .b-admin-screen__lists {
+  padding-top: var(--common-padding);
+  padding-bottom: 100px;
+  max-width: 600px;
+}
+
+.b-admin-screen__header {
+  text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .b-admin-screen .b-admin-screen__lists {
+    padding-top: 85px;
+  }
+}

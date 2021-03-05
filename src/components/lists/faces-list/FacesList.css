@@ -1,0 +1,72 @@
+.b-faces-list__add-btn {
+  width: 100%;
+}
+
+.b-faces-list__add-btn,
+.b-faces-list__card,
+.b-faces-list__values-to-add {
+  margin-bottom: var(--average-margin);
+}
+
+.b-faces-list__values-to-add p {
+  margin-bottom: 0;
+}
+
+.b-faces-list__card:last-child {
+  margin-bottom: 0;
+}
+
+.b-faces-list__card .card-header {
+  padding: 0;
+}
+
+.b-faces-list__card-buttons button {
+  width: 100%;
+}
+
+.b-faces-list__card-data p {
+  margin-bottom: 0;
+}
+
+.b-faces-list__modal-form .b-faces-list__modal-file-input {
+  margin-bottom: var(--medium-margin);  
+}
+
+.b-faces-list__edit-modal-form .b-faces-list__modal-file-input {
+  margin-bottom: var(--average-margin);
+}
+
+.b-faces-list__cards .card-columns .card {
+  max-width: unset;
+}
+
+.b-faces__select-resident {
+  margin-top: -5px;
+}
+
+.b-faces-list__delete-btn {
+  margin-bottom: -1px;
+}
+
+@media (min-width: 392px) and (max-width: 575px) {
+  .b-faces-list__cards .card-columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  .b-faces-list__cards .card-columns .card {
+    width: 48.4%;
+    height: fit-content;
+  }
+
+  .b-faces-list__cards .card-columns .card:nth-child(odd) {
+    margin-right: var(--common-margin);
+  }
+}
+
+@media (min-width: 576px) {
+  .b-faces-list__cards .card-columns {
+    column-count: 2;
+  }
+}

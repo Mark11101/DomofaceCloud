@@ -1,0 +1,47 @@
+.b-input-field {
+  margin-bottom: var(--medium-margin);
+  flex-grow: 1;
+  position: relative;
+}
+
+.b-input-field__label {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.b-input-field .b-input-panel {
+  width: 100%;
+}
+
+.b-input-field .MuiFormLabel-root.Mui-focused {
+  color: var(--secondary-color);
+}
+
+.b-input-field .MuiFormLabel-root.Mui-focused.Mui-error {
+  color: var(--delete-color);
+}
+
+.b-input-field .MuiFormLabel-root {
+  font-family: 'Circe Regular', sans-serif;
+}
+
+.b-input-field__inner-description-label {
+  position: absolute;
+  top: 9px;
+  left: 14px;
+  font-size: 13px;
+}
+
+.b-input-panel--with-inner-description-label .MuiOutlinedInput-input {
+  padding-left: 72px;
+  font-size: 13px;
+}
+
+.b-input-field__empty-input {
+  display: none;
+}
+
+.b-input-field .MuiFormHelperText-root {
+  margin-bottom: 0;
+  margin-left: 1px;
+}

@@ -1,0 +1,13 @@
+h3.b-entrances-list__create-intercom-header {
+  text-align: center;
+  font-size: 22px;
+  margin-top: var(--huge-margin);
+  margin-bottom: var(--big-margin);
+}
+
+.b-entrances-list__create-intercom-voltages-header h4 {
+  text-align: center;
+  font-size: 18px;
+  margin-top: var(--big-margin);
+  margin-bottom: var(--common-margin);
+}

@@ -1,0 +1,11 @@
+.b-pin-codes-list__no-values {
+  margin-bottom: var(--average-margin);
+}
+
+.b-pin-codes-list__no-values p {
+  margin-bottom: 0;
+}
+
+.b-pin-codes-list__input-field.input-field {
+  margin-bottom: var(--average-margin);
+}

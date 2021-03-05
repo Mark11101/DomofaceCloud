@@ -1,0 +1,9 @@
+.b-service-screen .b-houses {
+  padding-bottom: 170px;
+}
+
+@media (min-width: 1200px) {
+  .b-service-screen .b-houses {
+    padding-bottom: 85px;
+  }
+}

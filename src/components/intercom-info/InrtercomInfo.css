@@ -1,0 +1,80 @@
+.b-intercom-info p {
+  margin-bottom: 0;
+}
+
+.b-intercom-info .b-button {
+  width: 100%;
+  margin-bottom: var(--tiny-margin);
+}
+
+.b-intercom-info .b-button:last-child {
+  margin-bottom: 0;
+}
+
+a.b-button:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.b-intercom-info__control-btns {
+  display: flex;
+  margin-bottom: var(--average-margin);
+}
+
+.b-intercom-info .b-intercom-info__control-btns button {
+  margin-bottom: 0;
+}
+
+.b-intercom-info__edit-form .b-input-field {
+  margin-bottom: var(--average-margin);
+}
+
+.b-intercom-info .b-intercom-info__edit-btn:hover {
+  background-color: var(--edit-color);
+}
+
+.b-intercom-info .Collapsible__contentInner p {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  align-items: center;
+  margin-bottom: var(--small-margin);
+}
+
+.b-intercom-info .Collapsible__contentInner p span {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+}
+
+.b-intercom-info .Collapsible__contentInner p span:first-child {
+  margin-right: var(--huge-margin);
+}
+
+.b-intercom-info .Collapsible__contentInner p span:last-child {
+  flex: 0.4;
+}
+
+.b-intercom-info__status--online {
+  color: var(--secondary-color);
+}
+
+.b-intercom-info__status--offline {
+  color: var(--delete-color);
+}
+
+.b-intercom-info-change-sip__message {
+  text-align: center;
+  margin-bottom: var(--common-margin);
+}
+
+.b-intercom-info-change-sip__buttons button {
+  width: 100%;
+  margin-bottom: var(--tiny-margin);
+}
+
+.b-intercom-info-change-sip__buttons button:last-child {
+  margin-bottom: 0;
+}

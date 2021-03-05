@@ -1,0 +1,61 @@
+.b-admin-screen .b-admin-accounts-settings {
+  padding-top: var(--common-padding);
+  padding-bottom: 100px;
+  max-width: 600px;
+}
+
+.accounts-view .b-admins .b-list-form__item-admin .b-list-form__item-buttons {
+  display: none;
+}
+
+.b-admin-accounts-settings__header {
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: var(--big-margin);
+}
+
+.b-admin-accounts-settings__edit-btn {
+  width: 100%;
+  margin-right: 1px;
+}
+
+.b-admin-accounts-settings__change-password-btn {
+  background-color: var(--edit-secondary-color);
+  margin-right: 1px;
+}
+
+.b-admin-accounts-settings .b-admin-accounts-settings__change-password-btn:hover {
+  background-color: var(--edit-secondary-color);
+}
+
+.b-admin-accounts-settings .Collapsible .Collapsible__trigger {
+  margin-bottom: var(--tiny-margin);
+}
+
+.b-admin-accounts-settings .Collapsible:last-child {
+  padding-bottom: 150px;
+}
+
+.b-admin-accounts-settings__control-btns {
+  display: flex;
+  margin-bottom: var(--common-margin);
+}
+
+.b-admin-accounts-settings__control-btns button {
+  width: 100%;
+  margin-bottom: var(--huge-margin);
+}
+
+.b-admin-screen .b-admin-accounts-settings .b-companies .b-list-form {
+  padding: 0;
+}
+
+@media (min-width: 1200px) {
+  .b-admin-screen .b-admin-accounts-settings {
+    padding-top: 85px;
+  }
+
+  .b-admin-accounts-settings .Collapsible:last-child {
+    padding-bottom: 100px;
+  }
+}
